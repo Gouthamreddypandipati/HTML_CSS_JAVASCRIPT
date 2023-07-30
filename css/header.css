@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+    padding-top: 60px;
+    padding-left: 71px;
+    padding-right: 24px;
+    background-color: rgb(230, 230, 230);
+}
+.header{
+height: 50px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: white;
+border-bottom-width: 1px;
+border-bottom-style: solid ;
+border-bottom-color: rgb(214, 207, 207);
+z-index: 1;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.middle-section{
+    flex: 1;
+    margin-left: 60px;
+    margin-right: 30px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.right-section{
+    width:300px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+.hb{
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ylogo{
+    height: 20px;
+}
+.search-bar{
+    position: relative;
+    height: 30px;
+    flex: 1;
+    border: 2px solid rgb(231,228,228);
+    padding-left: 10px;
+    border-radius: 1px;
+    box-shadow: inset 1px 1px  gray;
+    width: 0;
+
+}
+.notification .tooltip{
+    position: absolute;
+    bottom: -10px;
+    background-color: rgb(162, 162, 162);
+    padding: 2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.notification:hover .tooltip{
+    opacity: 1;
+}
+.search-bar::placeholder{
+    font-family: roboto, Arial;
+}
+.simg{
+    height: 35px;
+    width:60px;
+    background-color: rgb(231,228,228);
+    margin-left: -1px;
+    margin-right: 10px;
+    border: 1px solid rgb(231,228,228) ;
+}
+.vimg{
+    height: 35px;
+    width: 35px;
+    border-radius: 17px;
+    background-color: rgb(240, 237, 237);
+    margin-left: 20px;
+}
+.u{
+    height: 35px;
+}
+.app{
+    height: 35px;
+}
+.n{
+    height: 35px;
+}
+.p{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+.notification{
+    position: relative;
+}
+.number{
+    position: absolute;
+    top: -3px;
+    right: 0;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Roboto;
+    font-size: 12px;
+}

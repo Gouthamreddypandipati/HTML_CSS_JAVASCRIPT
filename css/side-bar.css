@@ -1,0 +1,29 @@
+.side-bar{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 50px;
+    width: 70px;
+    background-color: white;
+    z-index: 2;
+    cursor: pointer;
+}
+.s1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+.s1:hover{
+    background-color: rgb(237, 236, 236);
+}
+.s1 img{
+    height: 30px;
+}
+.text{
+    font-family: Roboto;
+    margin-top: 10px;
+    font-size: 10px;
+}

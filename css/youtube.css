@@ -1,0 +1,99 @@
+p{
+    font-family: Roboto ;
+    margin: 0px;
+    bottom: 0px;
+}
+.search-bar{
+    font-size: 20px;
+    display: block;
+
+}
+.video_thumbnail{
+    width:100%;
+}
+.channel_pick{
+    vertical-align: top;
+    position: relative;
+}
+.cp{
+    width: 45px;
+    border-radius: 100px;
+}
+.video_data{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+}
+.video_title{
+    margin-top: 0px;
+    line-height: 20px;
+    width: 300px;
+}
+.vtext{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.video_author{
+    margin-top: 5px;
+    color: gray;
+    margin-bottom: 7px;
+}
+.video_status{
+    margin-top: 3px;
+    color: gray;
+}
+.page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 30px;
+}
+@media (max-width: 750px) {
+    .page{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.video{
+    position: relative;
+}
+.video_time{
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    background-color: black;
+    color: white;
+}
+.card{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    top: 10;
+    left: 10px;
+    padding: 9px;
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    transition: opacity 0.15s;
+
+}
+.card img{
+    width: 50px;
+    border-radius: 30px;
+}
+.card .card_text{
+    width: 150px;
+}
+.card .name{
+    font-family: Roboto;
+    font-weight: 700;
+    margin-left: 10px;
+    line-height: 30px;
+    
+}
+.card .count{
+    margin-left: 10px;
+    color: rgb(110, 108, 108);
+}
+.channel_pick:hover .card{
+    opacity: 1;
+}
